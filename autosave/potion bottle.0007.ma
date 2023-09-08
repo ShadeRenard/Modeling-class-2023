@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: potion bottle.ma
-//Last modified: Fri, Sep 08, 2023 03:15:33 PM
+//Name: potion bottle.0007.ma
+//Last modified: Fri, Sep 08, 2023 03:13:05 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,7 +10,8 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "DD31A833-4B9A-519C-3EC6-FBA5A0FF9488";
+fileInfo "UUID" "3F4B2C92-436D-C321-C0E5-47AE82EA504D";
+fileInfo "exportedFrom" "C:/Users/Marsadie Erichsen/OneDrive/Documents/Animotica/Projects/Modeling class 2022/DAGV 140/Modeling-class-2023/potion bottle.ma";
 createNode transform -s -n "persp";
 	rename -uid "8237CD74-4907-749C-384E-C7AA3205C01E";
 	setAttr ".v" no;
@@ -3076,7 +3077,7 @@ createNode shadingEngine -n "lambert8SG";
 createNode materialInfo -n "materialInfo7";
 	rename -uid "ACC3906C-4C7D-F5EE-E200-00BDF014CD0E";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "95922E71-423E-A27E-F885-2E896F32BE61";
+	rename -uid "D4FF034D-47D7-779F-828B-078C3FA2D0C7";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -72.023806661840595 -101.78571024111358 ;
 	setAttr ".tgi[0].vh" -type "double2" 74.404758948182419 99.404757954771725 ;
@@ -3195,10 +3196,6 @@ relationship "shadowLink" ":lightLinker1" "lambert7SG.message" ":defaultLightSet
 relationship "shadowLink" ":lightLinker1" "lambert8SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
-		 -na;
-connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
-connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "layerManager.dli[1]" "reference.id";
 connectAttr "layerManager.dli[2]" "bottle.id";
 connectAttr "lambert2.oc" "lambert2SG.ss";
@@ -3269,4 +3266,4 @@ connectAttr "lambert6.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert7.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert8.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of potion bottle.ma
+// End of potion bottle.0007.ma
