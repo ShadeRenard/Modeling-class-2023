@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: remodeled table.ma
-//Last modified: Fri, Sep 08, 2023 12:06:25 PM
+//Name: remodeled table.0001.ma
+//Last modified: Fri, Sep 08, 2023 12:06:15 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,7 +10,8 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "8A94AF97-4C06-AD75-B509-109693104162";
+fileInfo "UUID" "73D56D1E-46C3-A62B-5707-5FB6768327D2";
+fileInfo "exportedFrom" "C:/Users/Marsadie Erichsen/OneDrive/Documents/Animotica/Projects/Modeling class 2022/DAGV 140/Modeling-class-2023/remodeled table.ma";
 createNode transform -s -n "persp";
 	rename -uid "13C22B01-4855-3CCF-1622-FA8EF59FFC98";
 	setAttr ".v" no;
@@ -1363,7 +1364,7 @@ createNode shadingEngine -n "lambert4SG";
 createNode materialInfo -n "materialInfo3";
 	rename -uid "542702C5-4762-5257-3DDA-B5BB9CD73289";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "85C95366-48DB-972D-657C-D2AB9E321F26";
+	rename -uid "E0296D35-43D4-D568-0F27-2B9E9D5C1DCA";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -44.047617297323995 -157.14285089856131 ;
 	setAttr ".tgi[0].vh" -type "double2" 102.38094831269902 44.047617297323995 ;
@@ -1461,10 +1462,6 @@ relationship "shadowLink" ":lightLinker1" "lambert3SG.message" ":defaultLightSet
 relationship "shadowLink" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
-		 -na;
-connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
-connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "layerManager.dli[1]" "reference.id";
 connectAttr "layerManager.dli[2]" "boards.id";
 connectAttr "lambert2.oc" "lambert2SG.ss";
@@ -1511,4 +1508,4 @@ connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert3.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert4.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of remodeled table.ma
+// End of remodeled table.0001.ma
