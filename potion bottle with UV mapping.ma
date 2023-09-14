@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: potion bottle with UV mapping.ma
-//Last modified: Thu, Sep 14, 2023 02:51:05 PM
+//Last modified: Thu, Sep 14, 2023 02:56:13 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "BE636DE7-41EB-9732-0F5A-8798898244E1";
+fileInfo "UUID" "617A74F2-4BF2-02D2-D48F-1F9A7AB2E9F0";
 createNode transform -s -n "persp";
 	rename -uid "8237CD74-4907-749C-384E-C7AA3205C01E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.62351965603491522 0.86432952101758742 -1.9237757060063929 ;
-	setAttr ".r" -type "double3" -9.9383527271446095 2356.199999999822 0 ;
+	setAttr ".t" -type "double3" -0.8418791009090556 1.4581351764753503 -1.64153381741397 ;
+	setAttr ".r" -type "double3" -25.538352727146236 2364.1999999997684 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2328AA90-4815-3DD4-CE4A-F4A12C8C108D";
 	setAttr -k off ".v" no;
