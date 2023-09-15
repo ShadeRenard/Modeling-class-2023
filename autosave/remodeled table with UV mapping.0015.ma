@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: remodeled table with UV mapping.ma
-//Last modified: Fri, Sep 15, 2023 11:04:21 AM
+//Name: remodeled table with UV mapping.0015.ma
+//Last modified: Fri, Sep 15, 2023 11:14:22 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,17 +10,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "F3DD76E1-4517-A49D-94CE-60A19139CEB8";
+fileInfo "UUID" "F092E642-4548-21F4-07FD-13AB8B36ACFD";
+fileInfo "exportedFrom" "C:/Users/Marsadie Erichsen/OneDrive/Documents/Animotica/Projects/Modeling class 2022/DAGV 140/Modeling-class-2023/remodeled table with UV mapping.ma";
 createNode transform -s -n "persp";
 	rename -uid "13C22B01-4855-3CCF-1622-FA8EF59FFC98";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.4257478713267568 -0.84681578906151245 3.9609231220559886 ;
-	setAttr ".r" -type "double3" 24.261647270499282 3243.0000000014538 1.9905746893475165e-16 ;
+	setAttr ".t" -type "double3" -16.114803832501018 0.87545531891197559 -7.3016481107071485 ;
+	setAttr ".r" -type "double3" 11.061647270518234 3147.4000000012534 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5C3F07E7-43ED-5896-627B-04A2E118CCDC";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 11.486908888097663;
+	setAttr ".coi" 15.57670544118062;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -280,7 +281,7 @@ createNode mesh -n "boardzShape" -p "boardz";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.25 0.375 ;
+	setAttr ".pv" -type "double2" 0.49999970197677612 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -538,7 +539,7 @@ createNode mesh -n "pCubeShape8" -p "pCube8";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.42440636409446597 1.7623071700024111 ;
+	setAttr ".pv" -type "double2" 0.40328072697789841 1.6881095175825369 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -3463,6 +3464,38 @@ createNode polyTweakUV -n "polyTweakUV83";
 		 0.40882593 1.6779809 -0.21301718 1.021790743 0.31720138 1.85826933 0.5253641 1.91281772
 		 0.72364795 1.72553098 1.93332112 0.89856154 1.73347974 0.74352843 -0.36445484 1.87403572
 		 -0.67890304 1.8260982 0.64574152 0.89438671 0.84517342 1.049543858;
+createNode polyPlanarProj -n "polyPlanarProj21";
+	rename -uid "6A8B74F3-4138-609B-5375-DA9C4A45DAB1";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[6]";
+	setAttr ".ix" -type "matrix" 5.6818930393269316 -0.022537804326444148 5.9498986464000154 0
+		 0.80527259489550618 0.039354745585929149 -0.76885104335517229 0 -0.0073146311011846278 0.30900316114438708 0.0081556354494458985 0
+		 1.8900351967144391 3.4054177276800139 -4.4975050623735475 1;
+	setAttr ".ws" yes;
+	setAttr ".pc" -type "double3" -0.89389270544052124 1.0674279928207397 -6.5827329158782959 ;
+	setAttr ".ro" -type "double3" -90 0 0 ;
+	setAttr ".ps" -type "double2" 3.234467625617981 3.162773609161377 ;
+	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+createNode polyTweakUV -n "polyTweakUV84";
+	rename -uid "E66813D1-40FE-1D5A-65A8-3CA9D810B16D";
+	setAttr ".uopa" yes;
+	setAttr -s 5 ".uvtk";
+	setAttr ".uvtk[16]" -type "float2" 0.16276424 1.6712555 ;
+	setAttr ".uvtk[17]" -type "float2" 0.14163257 1.6680983 ;
+	setAttr ".uvtk[18]" -type "float2" -0.36231938 0.67958134 ;
+	setAttr ".uvtk[19]" -type "float2" -0.28885257 0.81612486 ;
+createNode polyPlanarProj -n "polyPlanarProj22";
+	rename -uid "D8807F19-4087-6F04-0A13-1D8F0722FD33";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 2 "f[6:8]" "f[11]";
+	setAttr ".ix" -type "matrix" 5.6818930393269316 -0.022537804326444148 5.9498986464000154 0
+		 0.80527259489550618 0.039354745585929149 -0.76885104335517229 0 -0.0073146311011846278 0.30900316114438708 0.0081556354494458985 0
+		 1.8900351967144391 3.4054177276800139 -4.4975050623735475 1;
+	setAttr ".ws" yes;
+	setAttr ".pc" -type "double3" -2.4145790338516235 1.8239368200302124 -5.3107662200927734 ;
+	setAttr ".ro" -type "double3" -90 0 0 ;
+	setAttr ".ps" -type "double2" 1.5912225246429443 1.4935493469238281 ;
+	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -3517,7 +3550,7 @@ connectAttr "boards.di" "boardb.do";
 connectAttr "polyTweakUV80.out" "boardbShape.i";
 connectAttr "polyTweakUV80.uvtk[0]" "boardbShape.uvst[0].uvtw";
 connectAttr "boards.di" "boardz.do";
-connectAttr "polyMapDel1.out" "boardzShape.i";
+connectAttr "polyPlanarProj22.out" "boardzShape.i";
 connectAttr "boards.di" "boarda.do";
 connectAttr "polyTweakUV43.out" "boardaShape.i";
 connectAttr "polyTweakUV43.uvtk[0]" "boardaShape.uvst[0].uvtw";
@@ -3525,8 +3558,8 @@ connectAttr "boards.di" "boardq.do";
 connectAttr "polyTweakUV68.out" "boardqShape.i";
 connectAttr "polyTweakUV68.uvtk[0]" "boardqShape.uvst[0].uvtw";
 connectAttr "boards.di" "pCube8.do";
-connectAttr "polyTweakUV83.out" "pCubeShape8.i";
-connectAttr "polyTweakUV83.uvtk[0]" "pCubeShape8.uvst[0].uvtw";
+connectAttr "polyTweakUV84.out" "pCubeShape8.i";
+connectAttr "polyTweakUV84.uvtk[0]" "pCubeShape8.uvst[0].uvtw";
 connectAttr "boards.di" "boardn.do";
 connectAttr "polyMapDel10.out" "boardnShape.i";
 connectAttr "boards.di" "boarh.do";
@@ -3554,10 +3587,6 @@ relationship "shadowLink" ":lightLinker1" "lambert3SG.message" ":defaultLightSet
 relationship "shadowLink" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
-		 -na;
-connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
-connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "layerManager.dli[1]" "reference.id";
 connectAttr "layerManager.dli[2]" "boards.id";
 connectAttr "lambert2.oc" "lambert2SG.ss";
@@ -3917,6 +3946,11 @@ connectAttr "polyFlipUV30.out" "polyTweakUV82.ip";
 connectAttr "polyTweakUV82.out" "polyFlipUV31.ip";
 connectAttr "pCubeShape8.wm" "polyFlipUV31.mp";
 connectAttr "polyFlipUV31.out" "polyTweakUV83.ip";
+connectAttr "polyTweakUV83.out" "polyPlanarProj21.ip";
+connectAttr "pCubeShape8.wm" "polyPlanarProj21.mp";
+connectAttr "polyPlanarProj21.out" "polyTweakUV84.ip";
+connectAttr "polyMapDel1.out" "polyPlanarProj22.ip";
+connectAttr "boardzShape.wm" "polyPlanarProj22.mp";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert4SG.pa" ":renderPartition.st" -na;
@@ -3924,4 +3958,4 @@ connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert3.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert4.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of remodeled table with UV mapping.ma
+// End of remodeled table with UV mapping.0015.ma

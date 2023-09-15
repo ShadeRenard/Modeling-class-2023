@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: remodeled table with UV mapping.ma
-//Last modified: Fri, Sep 15, 2023 11:04:21 AM
+//Name: remodeled table with UV mapping.0013.ma
+//Last modified: Fri, Sep 15, 2023 10:48:09 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,17 +10,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "F3DD76E1-4517-A49D-94CE-60A19139CEB8";
+fileInfo "UUID" "D746362A-4DA7-5BB3-F32C-E7AD43526741";
+fileInfo "exportedFrom" "C:/Users/Marsadie Erichsen/OneDrive/Documents/Animotica/Projects/Modeling class 2022/DAGV 140/Modeling-class-2023/remodeled table with UV mapping.ma";
 createNode transform -s -n "persp";
 	rename -uid "13C22B01-4855-3CCF-1622-FA8EF59FFC98";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.4257478713267568 -0.84681578906151245 3.9609231220559886 ;
-	setAttr ".r" -type "double3" 24.261647270499282 3243.0000000014538 1.9905746893475165e-16 ;
+	setAttr ".t" -type "double3" -2.1303331810997554 1.2804659373967451 -12.741160066758692 ;
+	setAttr ".r" -type "double3" 22.461647270133721 3090.1999999985128 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5C3F07E7-43ED-5896-627B-04A2E118CCDC";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 11.486908888097663;
+	setAttr ".coi" 8.470923219400186;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -192,7 +193,7 @@ createNode mesh -n "boardbShape" -p "boardb";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.99303318157215559 1.3137967257450018 ;
+	setAttr ".pv" -type "double2" 0.38543478631379724 0.075844842940568924 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -538,7 +539,7 @@ createNode mesh -n "pCubeShape8" -p "pCube8";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.42440636409446597 1.7623071700024111 ;
+	setAttr ".pv" -type "double2" 0.4375 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -3376,93 +3377,9 @@ createNode polyMapSewMove -n "polyMapSewMove27";
 createNode polyTweakUV -n "polyTweakUV79";
 	rename -uid "DA4F0B00-44E2-C5B8-17AA-3994CDF9AC0A";
 	setAttr ".uopa" yes;
-	setAttr -s 7 ".uvtk";
+	setAttr -s 3 ".uvtk";
 	setAttr ".uvtk[15]" -type "float2" -2.6558006 1.4580867 ;
-	setAttr ".uvtk[17]" -type "float2" -0.77382755 -2.6264033 ;
-	setAttr ".uvtk[18]" -type "float2" 0.019672126 -4.3665481 ;
-	setAttr ".uvtk[24]" -type "float2" -0.62135637 -4.1137762 ;
-	setAttr ".uvtk[27]" -type "float2" 0.16284955 -2.4586296 ;
 	setAttr ".uvtk[30]" -type "float2" -2.6558006 1.4580867 ;
-createNode polyMapSewMove -n "polyMapSewMove28";
-	rename -uid "1056E070-4DC2-CF07-DA5F-0382932BB99B";
-	setAttr ".uopa" yes;
-	setAttr ".ics" -type "componentList" 1 "e[18]";
-createNode polyTweakUV -n "polyTweakUV80";
-	rename -uid "45C5C467-4B4A-3197-4290-4A9E68863B7E";
-	setAttr ".uopa" yes;
-	setAttr -s 17 ".uvtk";
-	setAttr ".uvtk[14]" -type "float2" -1.0475762 2.6659272 ;
-	setAttr ".uvtk[15]" -type "float2" -0.19725969 1.4793596 ;
-	setAttr ".uvtk[16]" -type "float2" 1.4832935 0.66829354 ;
-	setAttr ".uvtk[17]" -type "float2" -0.56918067 3.3154111 ;
-	setAttr ".uvtk[18]" -type "float2" -0.05361142 0.65016717 ;
-	setAttr ".uvtk[19]" -type "float2" 1.0189705 0.30194175 ;
-	setAttr ".uvtk[20]" -type "float2" 1.009987 1.1359024 ;
-	setAttr ".uvtk[21]" -type "float2" 0.30771947 2.3291943 ;
-	setAttr ".uvtk[22]" -type "float2" 1.5093776 1.168951 ;
-	setAttr ".uvtk[23]" -type "float2" 1.7374947 0.26433113 ;
-	setAttr ".uvtk[24]" -type "float2" -0.76078188 1.3730211 ;
-	setAttr ".uvtk[25]" -type "float2" 1.2551763 1.5729139 ;
-	setAttr ".uvtk[26]" -type "float2" 0.78611422 2.9786775 ;
-	setAttr ".uvtk[27]" -type "float2" 0.74882001 0.78350443 ;
-	setAttr ".uvtk[28]" -type "float2" 0.84965539 1.7597023 ;
-	setAttr ".uvtk[29]" -type "float2" 1.2801375 0.65433937 ;
-createNode polyPlanarProj -n "polyPlanarProj20";
-	rename -uid "236B8204-4BBC-D959-EEF6-7990BEAE9AF2";
-	setAttr ".uopa" yes;
-	setAttr ".ics" -type "componentList" 1 "f[0:5]";
-	setAttr ".ix" -type "matrix" 5.6818930393269316 -0.022537804326444148 5.9498986464000154 0
-		 0.80527259489550618 0.039354745585929149 -0.76885104335517229 0 -0.0073146311011846278 0.30900316114438708 0.0081556354494458985 0
-		 1.8900351967144391 3.4054177276800139 -4.4975050623735475 1;
-	setAttr ".ws" yes;
-	setAttr ".pc" -type "double3" -0.92619180679321289 1.0459778308868408 -6.7706561088562012 ;
-	setAttr ".ro" -type "double3" -90 0 0 ;
-	setAttr ".ps" -type "double2" 3.2990646362304688 3.2076654434204102 ;
-	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
-createNode polyTweakUV -n "polyTweakUV81";
-	rename -uid "3BD347F4-43AE-F95D-9EBA-CE85D9D4BDE1";
-	setAttr ".uopa" yes;
-	setAttr -s 5 ".uvtk";
-	setAttr ".uvtk[2]" -type "float2" -0.24691983 0 ;
-	setAttr ".uvtk[3]" -type "float2" -0.24691986 0 ;
-	setAttr ".uvtk[4]" -type "float2" -0.24691983 0 ;
-	setAttr ".uvtk[5]" -type "float2" -0.24691986 0 ;
-createNode polyFlipUV -n "polyFlipUV30";
-	rename -uid "23F8E633-489F-B111-9C53-4F8344E8A0B1";
-	setAttr ".uopa" yes;
-	setAttr ".ics" -type "componentList" 1 "f[2]";
-	setAttr ".ix" -type "matrix" 5.6818930393269316 -0.022537804326444148 5.9498986464000154 0
-		 0.80527259489550618 0.039354745585929149 -0.76885104335517229 0 -0.0073146311011846278 0.30900316114438708 0.0081556354494458985 0
-		 1.8900351967144391 3.4054177276800139 -4.4975050623735475 1;
-	setAttr ".up" yes;
-	setAttr ".pu" 0.31329301739999998;
-	setAttr ".pv" 0.53279161450000001;
-createNode polyTweakUV -n "polyTweakUV82";
-	rename -uid "235F5E75-4C33-6754-32C3-30BA22078BE7";
-	setAttr ".uopa" yes;
-	setAttr -s 5 ".uvtk";
-	setAttr ".uvtk[5]" -type "float2" -1.069986 0 ;
-	setAttr ".uvtk[9]" -type "float2" -1.069986 0 ;
-	setAttr ".uvtk[10]" -type "float2" -1.069986 0 ;
-	setAttr ".uvtk[11]" -type "float2" -1.069986 0 ;
-createNode polyFlipUV -n "polyFlipUV31";
-	rename -uid "5217580F-49EA-7922-3521-308C37C0A553";
-	setAttr ".uopa" yes;
-	setAttr ".ics" -type "componentList" 1 "f[0]";
-	setAttr ".ix" -type "matrix" 5.6818930393269316 -0.022537804326444148 5.9498986464000154 0
-		 0.80527259489550618 0.039354745585929149 -0.76885104335517229 0 -0.0073146311011846278 0.30900316114438708 0.0081556354494458985 0
-		 1.8900351967144391 3.4054177276800139 -4.4975050623735475 1;
-	setAttr ".up" yes;
-	setAttr ".pu" 0.3750793114;
-	setAttr ".pv" 0.4672083259;
-createNode polyTweakUV -n "polyTweakUV83";
-	rename -uid "D52E1AD2-4FCD-89B8-9A80-049FEC6DDF70";
-	setAttr ".uopa" yes;
-	setAttr -s 16 ".uvtk[0:15]" -type "float2" 0.25475878 1.89900351 -0.27545992
-		 1.062524796 -0.10998298 1.019634604 0.4629215 1.95355177 -0.047540389 0.97890091
-		 0.40882593 1.6779809 -0.21301718 1.021790743 0.31720138 1.85826933 0.5253641 1.91281772
-		 0.72364795 1.72553098 1.93332112 0.89856154 1.73347974 0.74352843 -0.36445484 1.87403572
-		 -0.67890304 1.8260982 0.64574152 0.89438671 0.84517342 1.049543858;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -3514,8 +3431,8 @@ connectAttr ":defaultColorMgtGlobals.wsn" "imagePlaneShape1.ws";
 connectAttr ":frontShape.msg" "imagePlaneShape1.ltc";
 connectAttr "polyMapDel13.out" "|table|tableShape.i";
 connectAttr "boards.di" "boardb.do";
-connectAttr "polyTweakUV80.out" "boardbShape.i";
-connectAttr "polyTweakUV80.uvtk[0]" "boardbShape.uvst[0].uvtw";
+connectAttr "polyTweakUV79.out" "boardbShape.i";
+connectAttr "polyTweakUV79.uvtk[0]" "boardbShape.uvst[0].uvtw";
 connectAttr "boards.di" "boardz.do";
 connectAttr "polyMapDel1.out" "boardzShape.i";
 connectAttr "boards.di" "boarda.do";
@@ -3525,8 +3442,7 @@ connectAttr "boards.di" "boardq.do";
 connectAttr "polyTweakUV68.out" "boardqShape.i";
 connectAttr "polyTweakUV68.uvtk[0]" "boardqShape.uvst[0].uvtw";
 connectAttr "boards.di" "pCube8.do";
-connectAttr "polyTweakUV83.out" "pCubeShape8.i";
-connectAttr "polyTweakUV83.uvtk[0]" "pCubeShape8.uvst[0].uvtw";
+connectAttr "polyMapDel9.out" "pCubeShape8.i";
 connectAttr "boards.di" "boardn.do";
 connectAttr "polyMapDel10.out" "boardnShape.i";
 connectAttr "boards.di" "boarh.do";
@@ -3554,10 +3470,6 @@ relationship "shadowLink" ":lightLinker1" "lambert3SG.message" ":defaultLightSet
 relationship "shadowLink" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
-		 -na;
-connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
-connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "layerManager.dli[1]" "reference.id";
 connectAttr "layerManager.dli[2]" "boards.id";
 connectAttr "lambert2.oc" "lambert2SG.ss";
@@ -3906,17 +3818,6 @@ connectAttr "boardbShape.wm" "polyFlipUV29.mp";
 connectAttr "polyFlipUV29.out" "polyTweakUV78.ip";
 connectAttr "polyTweakUV78.out" "polyMapSewMove27.ip";
 connectAttr "polyMapSewMove27.out" "polyTweakUV79.ip";
-connectAttr "polyTweakUV79.out" "polyMapSewMove28.ip";
-connectAttr "polyMapSewMove28.out" "polyTweakUV80.ip";
-connectAttr "polyMapDel9.out" "polyPlanarProj20.ip";
-connectAttr "pCubeShape8.wm" "polyPlanarProj20.mp";
-connectAttr "polyPlanarProj20.out" "polyTweakUV81.ip";
-connectAttr "polyTweakUV81.out" "polyFlipUV30.ip";
-connectAttr "pCubeShape8.wm" "polyFlipUV30.mp";
-connectAttr "polyFlipUV30.out" "polyTweakUV82.ip";
-connectAttr "polyTweakUV82.out" "polyFlipUV31.ip";
-connectAttr "pCubeShape8.wm" "polyFlipUV31.mp";
-connectAttr "polyFlipUV31.out" "polyTweakUV83.ip";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert4SG.pa" ":renderPartition.st" -na;
@@ -3924,4 +3825,4 @@ connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert3.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert4.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of remodeled table with UV mapping.ma
+// End of remodeled table with UV mapping.0013.ma
