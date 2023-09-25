@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: ChairRemodelwithUVmapping.ma
-//Last modified: Tue, Sep 19, 2023 01:20:58 PM
+//Name: ChairRemodelwithUVmapping.0006.ma
+//Last modified: Tue, Sep 19, 2023 12:53:25 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,8 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "D459004F-4FF2-0287-30B8-EBBC8621D932";
+fileInfo "UUID" "6A09F8C6-4A50-34F5-E9E4-B9A38428F27E";
+fileInfo "exportedFrom" "C:/Users/Marsadie Erichsen/OneDrive/Documents/Animotica/Projects/Modeling class 2022/DAGV 140/Modeling-class-2023/ChairRemodelwithUVmapping.ma";
 createNode transform -s -n "persp";
 	rename -uid "2A2B624D-4104-CA9F-04D9-BEADBECF9921";
 	setAttr ".v" no;
@@ -3179,10 +3180,6 @@ relationship "shadowLink" ":lightLinker1" "lambert4SG.message" ":defaultLightSet
 relationship "shadowLink" ":lightLinker1" "lambert5SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
-		 -na;
-connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
-connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "ChairMatte.oc" "lambert2SG.ss";
 connectAttr "lambert2SG.msg" "materialInfo1.sg";
 connectAttr "ChairMatte.msg" "materialInfo1.m";
@@ -3632,4 +3629,4 @@ connectAttr "file2.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file3.msg" ":defaultTextureList1.tx" -na;
 connectAttr "granite1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file4.msg" ":defaultTextureList1.tx" -na;
-// End of ChairRemodelwithUVmapping.ma
+// End of ChairRemodelwithUVmapping.0006.ma
