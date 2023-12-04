@@ -1,2 +1,2 @@
 # Modeling class 2023
-Projects for class
+Modeling in Maya, SketchFab, and Substance Painter
